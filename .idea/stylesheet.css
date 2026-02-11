@@ -79,6 +79,7 @@ Section.main-content-area {
                 .links {
                     display: flex;
                     flex-direction: column-reverse;
+                    algin-items: center;
                 }
             }
             .right-side {
