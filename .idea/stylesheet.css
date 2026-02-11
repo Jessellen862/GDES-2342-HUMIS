@@ -25,7 +25,7 @@ Section.main-content-area {
     flex-direction: column;
     justify-content: space-between;
 
-    nav {
+    nav.secondary{
         min-height: 20px;
         border: 1px dotted red;
         text-align: right;
@@ -67,6 +67,7 @@ Section.main-content-area {
         }
         .left-side {
                 width: 40%;
+                display: flex;
                 flex-direction: column;
                 justify-content: space-between;
 
@@ -74,8 +75,16 @@ Section.main-content-area {
                     border : 3px solid black;
                 }
                 nav {
-                    min-height: 60%;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        &:hover{
+                            color: white;
+                            background-color: black;
+                        }
+                    }
                 }
+
                 .links {
                     display: flex;
                     flex-direction: column-reverse;
