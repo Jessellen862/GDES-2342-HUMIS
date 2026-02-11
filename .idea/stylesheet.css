@@ -1,0 +1,121 @@
+body{
+    font-family: arial, Helvetica, sans-serif;
+}
+div#parent { /* declaration or "selector" */
+    border: 1px solid black;
+    width: 780px;
+    margin: 0 auto;
+}
+div#parent section {
+        border:1px solid black;
+}
+
+section.sub-head {
+    height: 50px;
+    background: url('files/histHomepic.jpg') top left no-repeat;
+}
+Section.footer{
+    background: darkgreen;
+    font-size: 10px;
+
+}
+Section.main-content-area {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    nav {
+        min-height: 20px;
+        border: 1px dotted red;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 11px;
+
+        a {
+            margin: 0 5px;
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            }
+        }
+
+        &.bottom {
+            font-size: 9px;
+            a {
+                text-transform: lowercase;
+            }
+        }
+
+    }
+
+    section.brown-box {
+        background-color: #BEC4A1;
+        padding: 20px;
+        border-radius: 10px;
+        min-height: 400px;
+        display: flex;
+        > * {
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .left-side {
+            width: 40%;
+            flex-direction: column;
+            justify-content: space-between;
+
+            > * {
+                border : 3px solid black;
+            }
+            nav {
+                min-height: 60%;
+            }
+            }
+            .right-side {
+                width: 60%;
+                background-color: white;
+                padding: 10px;
+                p{
+                    font-size: 10px;
+                }
+                img{
+                    margin-bottom: 10px;
+                }
+
+                div.more {
+
+                        text-align: right;
+
+                    a{
+                        color:red;
+                        text-decoration: none;
+                        font-size: 9px;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+    }
+section.footer {
+    background-color: #60663E;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    padding: 8px 0;
+}
+
+h4{
+    color: red;
+    border-bottom: 2px dashed red;
+    font-weight: unset;
+    margin: 0 0 5px 0;
+}
